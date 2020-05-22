@@ -14,3 +14,13 @@ concatenation (+) - "charlie" + "brown" = "charliebrown"
 escape character (\) - "He said, \"No way!\""
 length (.length) - "hello world".length = 11
 access character ([n]) - "hello"[0] = "h", "hello"[4] = "o"
+
+Exercise 1:
+//1
+100 % 3 = 1
+
+//2
+("blah" + "blah")[6] = "a"
+
+//3
+"hello".length % "hi\\".length = 2
