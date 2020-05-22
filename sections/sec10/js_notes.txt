@@ -1,0 +1,16 @@
+5 primitive data types:
+- numbers (4, 9.3, -10)
+- strings ("Hello World", "43")
+- boolean (true, false)
+- null (null)
+- undefined (undefined)
+
+numbers:
+math operators
+modulo (%) - remainder operator
+
+strings:
+concatenation (+) - "charlie" + "brown" = "charliebrown"
+escape character (\) - "He said, \"No way!\""
+length (.length) - "hello world".length = 11
+access character ([n]) - "hello"[0] = "h", "hello"[4] = "o"
