@@ -1,21 +1,21 @@
-5 primitive data types:
+5 PRIMITIVE DATA TYPES:
 - numbers (4, 9.3, -10)
 - strings ("Hello World", "43")
 - boolean (true, false)
 - null (null)
 - undefined (undefined)
 
-numbers:
+NUMBERS:
 math operators
 modulo (%) - remainder operator
 
-strings:
+STRINGS:
 concatenation (+) - "charlie" + "brown" = "charliebrown"
 escape character (\) - "He said, \"No way!\""
 length (.length) - "hello world".length = 11
 access character ([n]) - "hello"[0] = "h", "hello"[4] = "o"
 
-Exercise 1:
+EXERCISE 1:
 //1
 100 % 3 = 1
 
@@ -24,3 +24,16 @@ Exercise 1:
 
 //3
 "hello".length % "hi\\".length = 2
+
+
+
+VARIABLES:
+var variableName = myValue;
+dynamic typing = you can change variable's data type after setting it
+best practice: camel case variable names
+
+new ways to create variables:
+let - like var, but block-scoped
+const - also block-scoped, but can't be reassigned
+
+const > let > var
