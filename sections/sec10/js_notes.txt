@@ -37,3 +37,13 @@ let - like var, but block-scoped
 const - also block-scoped, but can't be reassigned
 
 const > let > var
+
+NULL & UNDEFINED:
+Undefined - Variables that are declared but not initialized - var name;
+Null - Variables that are explicitly empty - var name = null;
+
+BUILT-IN METHODS:
+alert - alert("Hello world!");
+prompt - prompt("What is your name?"); - var userName = prompt("What is your name?");
+console.log - console.log("Hello world!");
+clear - clear()
