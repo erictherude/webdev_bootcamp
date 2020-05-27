@@ -1,0 +1,20 @@
+BOOLEAN OPERATORS
+
+comparison operators:
+>		greater than
+>=		greater than or equal to
+<		less than
+<=		greater than or equal to
+==		equal to
+!=		not equal to
+===		equal value and type
+!==		not equal value and type
+
+== performs type coercion, === does not
+=== is best in most cases -more specific
+
+logical operators:
+(for x = 5 and y = 9)
+&&		AND		x < 10 && x !== 5	FALSE
+||		OR 		x < 10 || x !== 5	TRUE
+!		NOT 	!(x === y)			TRUE
