@@ -34,3 +34,39 @@ else is(age < 21){
 else {
 	console.log("Come on in and have a drink!");
 }
+
+
+
+JS LOOPS
+
+DRY - Don't repeat yourself!
+
+While Loops:
+repeat code while a condition is true
+
+while(condition){
+	// DO THIS	
+}
+
+let count = 1;
+while(count <= 5){
+	console.log("Count is " + count);
+	count+=2;
+}
+
+let string = "hello";
+let count = 0;
+
+while(count < string.length){
+	console.log(string[count]);
+	count++;
+}
+
+Infinite loops occur when end condition cannot be satisfied:
+	let count = 0;
+	while(count < 10){
+		console.log(count);
+	}
+	Doesn't increment count so will never reach condition.
+
+
