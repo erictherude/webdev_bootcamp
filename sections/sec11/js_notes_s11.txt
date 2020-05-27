@@ -1,20 +1,36 @@
 BOOLEAN OPERATORS
 
-comparison operators:
+Comparison Operators:
 >		greater than
 >=		greater than or equal to
 <		less than
 <=		greater than or equal to
 ==		equal to
 !=		not equal to
-===		equal value and type
-!==		not equal value and type
+===		equal value and type (strict equal to)
+!==		not equal value and type (strict not equal to)
 
 == performs type coercion, === does not
 === is best in most cases -more specific
 
-logical operators:
+Logical Operators:
 (for x = 5 and y = 9)
 &&		AND		x < 10 && x !== 5	FALSE
 ||		OR 		x < 10 || x !== 5	TRUE
 !		NOT 	!(x === y)			TRUE
+
+
+
+JS CONDITIONALS
+
+IF, ELSE IF, ELSE
+
+if(age < 18){
+	console.log("Sorry, you are not old enough to enter.");
+}
+else is(age < 21){
+	console.log("You can enter, but you cannot drink.");
+}
+else {
+	console.log("Come on in and have a drink!");
+}
