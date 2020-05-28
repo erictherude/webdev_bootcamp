@@ -41,6 +41,8 @@ JS LOOPS
 
 DRY - Don't repeat yourself!
 
+
+
 While Loops:
 repeat code while a condition is true
 
@@ -69,4 +71,22 @@ Infinite loops occur when end condition cannot be satisfied:
 	}
 	Doesn't increment count so will never reach condition.
 
+
+
+For Loops:
+repeat with scope-limited variable. similar to, but more compact than while loop.
+
+for(init; condition, step){
+	// DO THIS;
+}
+
+// Count 1 to 5
+for(let count = 1; count <= 5; count++){
+	console.log("Count is " + count);
+}
+
+let str = "hello";
+for(let i = 0; i < str.length; i++){
+	console.log(str[i]);
+}
 
