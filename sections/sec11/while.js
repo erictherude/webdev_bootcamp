@@ -21,7 +21,7 @@ while(n2 < 41){
 }
 
 
-// from solution
+// from solution:
 // let n2 = 10;
 //
 // while(n2 < 41){
