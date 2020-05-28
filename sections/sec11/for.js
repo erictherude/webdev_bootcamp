@@ -13,6 +13,7 @@ for(let n = 10; n <= 40; n++){
 		console.log(n);
 	}
 }
+
 // Print all odd numbers between 300 and 333.
 console.log("Print all odd numbers between 300 and 333");
 
@@ -21,6 +22,7 @@ for(let n = 300; n <= 333; n++){
 		console.log(n);
 	}
 }
+
 // Print all numbers divisible by both 3 and 5 between 5 and 50.
 console.log("Print all numbers divisible by both 3 and 5 between 5 and 50");
 
