@@ -55,3 +55,11 @@ function capitalize(str) {
 let capitalize = function(str) {
 	return str.charAt(0).toUpperCase + str.slice(1);
 }
+
+JS SCOPE:
+the context that code is executed in
+
+function doMath() {
+    let x = 40;			// x only exists inside this function
+    console.log(x);
+}
