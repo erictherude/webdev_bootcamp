@@ -34,6 +34,7 @@ function area(len, wid){
 
 RETURN KEYWORD:
 causes a function to create an output value
+execution stops immediately after
 
 input => function => output
 
