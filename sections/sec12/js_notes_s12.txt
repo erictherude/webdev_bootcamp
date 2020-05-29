@@ -1,0 +1,56 @@
+JS FUNCTIONS:
+reusable chunks of code that can be reused
+
+function funcName() {
+	// DO THIS STUFF
+}
+funcName();
+
+function sayHi() {
+	console.log("HELLO!");
+	console.log("GOODBYE!");
+}
+sayHi();
+
+ARGUMENTS:
+Inputs to functions
+
+function funcName(arg) {
+	// DO THIS STUFF
+}
+funcName(value);
+
+function square(num) {
+	console.log(num * num);
+}
+
+square(10); // 100
+square(3); // 9
+square(4); // 16
+
+function area(len, wid){
+	console.log(len * wid);
+}
+
+RETURN KEYWORD:
+causes a function to create an output value
+
+input => function => output
+
+function square(num) {
+	return num * num;
+}
+
+function capStr(str) {
+	return str.charAt(0).toUpperCase + str.slice(1);
+}
+
+// function declaration
+function capitalize(str) {
+	return str.charAt(0).toUpperCase + str.slice(1);
+}
+
+// function expression
+let capitalize = function(str) {
+	return str.charAt(0).toUpperCase + str.slice(1);
+}
