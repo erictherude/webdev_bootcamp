@@ -1,0 +1,34 @@
+ARRAYS:
+variables that group items together to make listsd
+
+comma-separated list
+items are given indexes
+indexes an be used to retrieve items
+can also use indexes to update array items
+can add items to array
+
+
+﻿
+> let colors = ["red", "orange", "yellow"];
+< undefined
+> colors
+< (3) ["red", "orange", "yellow"]
+> colors[3] = "green"
+< "green"
+> colors
+< (4) ["red", "orange", "yellow", "green"]
+> colors[10] = "violet";
+< "violet"
+> colors
+< (11) ["red", "orange", "yellow", "green", empty × 6, "violet"]
+
+can initialize and empty array in two ways
+> let friends = [];
+> let friends = newArray(); // not commonly used
+
+arrays can hold mixed data types
+> let randos = [49, true, "Hermione"]
+
+arrays have a length property (number of items)
+> colors.length;
+< 11
