@@ -63,3 +63,6 @@ function doMath() {
     let x = 40;			// x only exists inside this function
     console.log(x);
 }
+
+HIGHER ORDER FUNCTIONS:
+a function that takes another function as an arg, or a function that returns another function
