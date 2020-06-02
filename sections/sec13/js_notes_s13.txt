@@ -73,3 +73,31 @@ slice				copy parts of an array 					VAR.slice(START-IND, END-IND);
 < (2) ["orange", "yellow"]
 > colors
 < (4) ["red", "orange", "yellow", "green"]
+
+
+
+ARRAY ITERAITION:
+performing an action on each item in a list
+use a loop to iterate over an array
+use forEach to iterate over an array
+
+let colors = ["red", "orange", "yellow", "green"]
+
+// For Loop:
+for(let i = 0; i < colors.length; i++) {
+	console.log(colors[i]);
+}
+
+// forEach:
+colors.forEach(function(color) {
+	console.log(color);
+});
+
+// another example:
+function printColor(color) {
+	console.log("********");
+	console.log(color);
+	console.log("********");
+}
+
+colors.forEach(printColor);
