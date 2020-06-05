@@ -4,9 +4,14 @@ let myArray = ["first", "second", "third", 4, false, "last"];
 function printReverse(array) {
 	let count = array.length - 1
 
-	for(i = count; i >= 0; i--) {
+	for(let i = count; i >= 0; i--) {
 		console.log(array[i]);
 	}
+
+	// from solution:
+	// for(let i = array.length - 1; i >= 0; i--) {
+	// 	console.log(array[i]);
+	// }
 }
 
 
@@ -34,6 +39,18 @@ function isUniform(array) {
 	console.log(state);
 }
 
+	// from solution
+	// function isUniform(arr) {
+	// 	let first = arr[0];
+	// 	FOR(var i = 1; i < arr.length; i++) {
+	// 		if(arr[i] != first) {
+	// 			return false;
+	// 		}
+	// 	}
+	// 	return true;
+	// }
+
+
 console.log("********************************");
 console.log("isUniform");
 isUniform(array1);
@@ -52,7 +69,7 @@ function sumArray(array) {
 	let sum = 0;
 
 	array.forEach(function(n) {
-		sum = sum + n;
+		sum = sum + n; // sum += n;
 	})
 	console.log(sum);
 }
