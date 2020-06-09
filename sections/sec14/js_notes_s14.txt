@@ -84,3 +84,44 @@ person.age: 21;
 person.city: "LA; 
 
 // objects can hold all types of data
+
+
+
+// Objects Exercises
+
+// Exercise 1
+
+> let someObject = {};
+< undefined
+> someObject._name = "Hedwig";
+< "Hedwig"
+> someObject.age = 6;
+< 6
+> let prop = "color"
+< undefined
+> someObject[prop] = "red";
+< "red"
+> someObject.123 = true;
+< VM5143:1 Uncaught SyntaxError: Unexpected number
+
+// Exercise 2
+
+> let myObj = {};
+< undefined
+> myObj.friends = [
+    {name: "Malfoy"},
+    {name: "Crabbe"},
+    {name: "Goyle"}
+    ]
+< (3) [{…}, {…}, {…}]
+> myObj.color = "baby blue";
+< "baby blue"
+> myObj.isEvil = true;
+< true
+> myObj
+< {friends: Array(3), color: "baby blue", isEvil: true}color: "baby blue"friends: Array(3)0: {name: "Malfoy"}1: {name: "Crabbe"}2: {name: "Goyle"}length: 3__proto__: Array(0)isEvil: true__proto__: Object
+> myObj.friends[0];
+< {name: "Malfoy"}
+> myObj.friends[0].name;
+< "Malfoy"
+
