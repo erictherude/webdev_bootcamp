@@ -1,0 +1,86 @@
+JS OBJECTS:
+
+Model a single person - name, age, and city
+// using an array:
+let person = ["Cindy", 32, "Missoula"];
+
+// retrieving inofrmation from array:
+let city = person[2];
+
+// open to error in event data is out of order in array, also no way to tell 
+// from looking what each item in array represents
+
+// using an OBJECT:
+let person = {
+	name: "Cindy",
+	age: 32,
+	city: "Missoula"
+};
+
+// similar to array but:
+// uses curly braces 
+// store data in name/value pairs 
+// no inherent order/index
+
+
+
+// Retrieving inofrmation from an object:
+
+// bracket notation (similar to array)
+let name = person["name"]; 
+
+// or dot notation (simpler, but has limitations)
+let name = person.name;
+
+// cannot use dot notation if property starts with a number
+myObj.1blah		// INVALID
+myObj["1blah"]	// VALID
+
+// cannot use variables in dot notation
+let str = "name";
+myObj.str 			// looks for a property named "str"
+myObj[str]			// looks for a property named "name"
+
+// cannot use dot notation if property name has a space
+myObj.fav color		// INVALID
+myObj["fav color"]	// VALID
+
+
+
+// Updating data in an object
+let person = {
+	name: "Travis",
+	age: 21,
+	city: "LA" 
+}
+
+person.age += 1;
+person.city = "London";
+
+> person
+< {name: "Travis", age: 22, city: "London"}
+
+
+
+// Creating objects
+
+// all at once
+let person = {
+	name: "Travis",
+	age: 21,
+	city: "LA" 
+}
+
+// start with empty objects and add data
+let person = {};
+person.name: "Travis";
+person.age: 21;
+person.city: "LA; 
+
+// new Object()
+let person = new Object();
+person.name: "Travis";
+person.age: 21;
+person.city: "LA; 
+
+// objects can hold all types of data
