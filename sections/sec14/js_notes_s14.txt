@@ -24,7 +24,7 @@ let person = {
 
 
 
-// Retrieving inofrmation from an object:
+Retrieving inofrmation from an object:
 
 // bracket notation (similar to array)
 let name = person["name"]; 
@@ -47,7 +47,8 @@ myObj["fav color"]	// VALID
 
 
 
-// Updating data in an object
+Updating data in an object:
+
 let person = {
 	name: "Travis",
 	age: 21,
@@ -62,7 +63,7 @@ person.city = "London";
 
 
 
-// Creating objects
+Creating objects:
 
 // all at once
 let person = {

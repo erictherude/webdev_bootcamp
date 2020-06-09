@@ -1,0 +1,29 @@
+INTRO TO THE DOM
+
+DOM = Document Object Model
+the interface between JS and HTML+CSS
+browser turns every HTML element in a doc into a JS object we can manipulate
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Title</title>
+</head>
+<body>
+	<a href="someLink">My Link</a>
+	<h1>My Header</h1>
+</body>
+</html>
+
+document
+	root element: <html>
+		element: <head>
+			element: <title>
+				text: "My Title"
+		element: <body>
+			element: <a>
+				attribute: "href"
+					value: "someLink"
+				text: "My Link"
+			element: <h1>
+				text: "My Header"
