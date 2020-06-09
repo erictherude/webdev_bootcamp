@@ -27,3 +27,24 @@ document
 				text: "My Link"
 			element: <h1>
 				text: "My Header"
+
+
+
+Select and Manipulate elements in the DOM:
+
+// Example 1 
+let h1 = document.querySelector("h1");		// SELECT
+h1.style.color = "pink";					// MANIPULATE
+
+// Example 2
+let body = document.querySelector("body");	// SELECT
+let isBlue = false;
+
+setInterval(function() {					// MANIPULATE
+	if(isBlue) {
+		body.style.background = "white";
+	} else {
+		body.style.background = "#3498db";
+	}
+	isBlue = !isBlue;
+}, 1000);
