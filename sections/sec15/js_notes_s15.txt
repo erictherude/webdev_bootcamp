@@ -1,5 +1,4 @@
-INTRO TO THE DOM
-
+Intro to the DOM:
 DOM = Document Object Model
 the interface between JS and HTML+CSS
 browser turns every HTML element in a doc into a JS object we can manipulate
@@ -31,7 +30,6 @@ document
 
 
 Select and Manipulate elements in the DOM:
-
 // Example 1 
 let h1 = document.querySelector("h1");		// SELECT
 h1.style.color = "pink";					// MANIPULATE
@@ -48,3 +46,13 @@ setInterval(function() {					// MANIPULATE
 	}
 	isBlue = !isBlue;
 }, 1000);
+
+
+
+Important Selector Methods:
+
+document.getElementByID()
+document.getElementsByClassName()
+document.getElementsByTagName()
+document.querySelector()		// Returns first element that matches a given CSS-style selector
+document.querySelectorAll()		// Returns all elements that match a given CSS-style selector
