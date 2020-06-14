@@ -1,0 +1,124 @@
+let logo = document.querySelector("#hplogo");
+undefined
+logo.setAttribute("srcset", "https://www.warrenphotographic.co.uk/photography/bigs/16610-Ginger-tabby-female-cat-in-lordosis-white-background.jpg")
+undefined
+logo.style.width = "500px";
+"500px"
+logo.style.heoght = "500px";
+"500px"
+logo.style.height = "500px";
+"500px"
+logo.style.width = "100px";
+"100px"
+logo.style.height = "200px";
+"200px"
+logo.style.height = "50px";
+"50px"
+logo.style.height = "1000px";
+"1000px"
+﻿
+logo.style.width = "200px";
+"200px"
+logo.style.height = "100px";
+"100px"
+logo.style.border = "2px solid purple"
+"2px solid purple"
+let links = document.getElementsByTagName("a");
+undefined
+for(let i = 0; i < links.length; i++){
+    console.log(links[i].textContent);
+}
+VM1131:2 About
+VM1131:2 Store
+VM1131:2 Gmail
+VM1131:2 Images
+2VM1131:2 
+VM1131:2 Report inappropriate predictions
+VM1131:2 Privacy
+VM1131:2 Terms
+VM1131:2 Settings
+VM1131:2 Search settings
+VM1131:2 Advanced search
+VM1131:2 Your data in Search
+VM1131:2 History
+VM1131:2 Search help
+VM1131:2 Send feedback
+VM1131:2 Advertising
+VM1131:2 Business
+VM1131:2   How Search works 
+VM1131:2 
+VM1131:2 Manage your Google Account
+VM1131:2 DefaultEric Kammerudekammerud@gmail.com
+VM1131:2 PTO Communicationscommunications@glenparkschool.org
+VM1131:2 Cora Kammerudcokammerud@s.sfusd.edu
+VM1131:2 Robert Kammerudrokammerud@s.sfusd.edu
+VM1131:2 Meg Pirnie Kammerudmeg.kammerud@gmail.com
+VM1131:2 All Brand accounts
+VM1131:2 Add another account
+VM1131:2 Sign out of all accounts
+VM1131:2 Privacy Policy
+VM1131:2 Terms of Service
+undefined
+for(let i = 0; i < links.length; i++){
+    links[i].style.background = "pink";
+}
+"pink"
+for(let i = 0; i < links.length; i++){
+    links[i].style.border = "1px dashed purple";
+}
+"1px dashed purple"
+for(let i = 0; i < links.length; i++){
+    links[i].style.border = "1px dashed purple";
+    links.[i].color = "orange";
+}
+VM1314:3 Uncaught SyntaxError: Unexpected token '['
+for(let i = 0; i < links.length; i++){
+    links[i].style.border = "1px dashed purple";
+    links[i].color = "orange";
+}
+"orange"
+for(let i = 0; i < links.length; i++){
+    links[i].style.border = "1px dashed purple";
+    links[i].color = "orange";
+}
+"orange"
+for(let i = 0; i < links.length; i++){
+    console.log(links[i].getAttribute("href"));
+}
+VM1452:2 https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header
+VM1452:2 https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US
+VM1452:2 https://mail.google.com/mail/?tab=wm&authuser=0&ogbl
+VM1452:2 https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl
+VM1452:2 https://www.google.com/intl/en/about/products?tab=wh
+VM1452:2 https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/
+VM1452:2 #
+VM1452:2 https://policies.google.com/privacy?fg=1
+VM1452:2 https://policies.google.com/terms?fg=1
+VM1452:2 https://www.google.com/preferences?hl=en
+VM1452:2 https://www.google.com/preferences?hl=en&fg=1
+VM1452:2 /advanced_search?hl=en&fg=1
+VM1452:2 //myactivity.google.com/privacyadvisor/search?utm_source=googlemenu&fg=1
+VM1452:2 //myactivity.google.com/product/search?utm_source=google&hl=en&fg=1
+VM1452:2 //support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+VM1452:2 #
+VM1452:2 https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+VM1452:2 https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+VM1452:2 //google.com/search/howsearchworks/?fg=1
+VM1452:2 https://myaccount.google.com/?utm_source=OGB&tab=wk&authuser=0
+VM1452:2 https://myaccount.google.com/?utm_source=OGB&tab=wk&authuser=0&utm_medium=act
+VM1452:2 https://www.google.com/webhp?authuser=0
+VM1452:2 https://www.google.com/webhp?authuser=1
+VM1452:2 https://www.google.com/webhp?authuser=2
+VM1452:2 https://www.google.com/webhp?authuser=3
+VM1452:2 https://www.google.com/webhp?authuser=4
+VM1452:2 https://myaccount.google.com/brandaccounts?authuser=0&continue=https://www.google.com/&service=https://www.google.com/webhp%3Fauthuser%3D%24authuser
+VM1452:2 https://accounts.google.com/AddSession?hl=en&continue=https://www.google.com/
+VM1452:2 https://accounts.google.com/Logout?hl=en&continue=https://www.google.com/&timeStmp=1592096481&secTok=.AG5fkS_hEsPv2fHiJqC0m3xUCQLlk7HwYg
+VM1452:2 https://policies.google.com/privacy?hl=en&authuser=0
+VM1452:2 https://myaccount.google.com/termsofservice?hl=en&authuser=0
+undefined
+for(let i = 0; i < links.length; i++){
+    links[i].setAttribute("href","http://bing.com");
+}
+undefined
+​
