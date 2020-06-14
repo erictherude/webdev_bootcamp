@@ -56,3 +56,93 @@ document.getElementsByClassName()
 document.getElementsByTagName()
 document.querySelector()		// Returns first element that matches a given CSS-style selector
 document.querySelectorAll()		// Returns all elements that match a given CSS-style selector
+
+
+
+MANIPULATING THE DOM
+
+
+Manipulating Style:
+
+DOM element style property
+
+let tag = document.getElementByID("highlight");
+
+tag.style.color = "blue";
+tag.style.border = "10px solid red";
+tag.style.fontSize = "70px";
+tag.style.background = "yellow";
+tag.style.marginTop = "200px";
+
+note that right side is always string
+
+if changing muliple things, better to change class and have CSS change style (separation of concerns):
+tag.classList.add("class-name");		// adds a class
+tag.classList.remove("class-name");		// removes a class
+tag.classList.toggle("class-name");		// removes if present, adds if not
+
+classList is not an array - use above commands to modify
+
+
+
+Manipulating Text and Content:
+
+textContent - returns a string of all text contained in an element
+innerHTML - returns a string of all text and tags contained in an element
+
+// HTML
+<p>	This an <strong>awesome</strong> paragraph.</p>
+
+// select the <p> tag:
+> let tag = document.querySelector("p");
+
+//Retrieve the textContent
+> tag.textContent;
+< "This is an awesome paragraph." // text only, no tags
+
+// Retrieve the innerHTML
+> tag.innerHTML;
+< "This an <strong>awesome</strong> paragraph."
+
+// alter the textContent
+> tag.textContent = "blah blah blah";
+< "blah blah blah"
+
+// alter the innerHTML
+> tag.innerHTML = "blah <em>blah</em> blah";
+< "blah blah blah"
+
+attempting to add tags with textContent just display the tags as if they were text
+
+
+
+Manipulating Attributes:
+
+getAttribute() and setAttribute() read and write attributes
+
+getAttribute(_att_)
+setAttribute(_att_, _value_)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
