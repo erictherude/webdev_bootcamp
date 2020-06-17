@@ -1,0 +1,4 @@
+ DOM EVENTS:
+
+attach event listeners to elements
+element.addEventListener(listener_type, function());
