@@ -1,0 +1,20 @@
+INTRO TO JQUERY
+jQuery is a DOM manipulation library
+easily select, create, and manipulate elements; add event listeners, animations, and effects; make HTTP requests (AJAX) 
+
+WHEN TO USE/NOT USE JQUERY
+Pros:
+- DOM API used to be "broken"
+- Can make code clearer and shorter
+- Easy to use
+- Cross-browser Support
+- AJAX
+- Widely used
+
+Cons:
+- DOM API is no longer "broken"
+- Anything you can do wth jQuery you can do without it
+- Unnecessary dependency (too heavy for specific uses)
+- Performance (can write self into inefficient code)
+- Lots of people are moving away froom jQuery
+
