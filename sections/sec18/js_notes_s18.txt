@@ -18,3 +18,43 @@ Cons:
 - Performance (can write self into inefficient code)
 - Lots of people are moving away froom jQuery
 
+
+SELECTING WITH JQUERY
+$ = universal selector
+S("_CSS-STYLE_SELECTOR_HERE")
+
+EXAMPLES:
+$("#adorable")
+S.fn.init [li#adorable]
+$("h1").css("color", "yellow")
+S.fn.init [h1, prevObject: S.fn.init(1)]
+$("h1").css("color", "orange")
+S.fn.init [h1, prevObject: S.fn.init(1)]
+let styles = {
+    color: "red",
+    background: "pink",
+    border: "2px solid purple"
+}
+undefined
+styles
+{color: "red", background: "pink", border: "2px solid purple"}
+$("h1").css(styles)
+S.fn.init [h1, prevObject: S.fn.init(1)]
+$("li").css("color", "blue")
+S.fn.init(3) [li, li, li#adorable, prevObject: S.fn.init(1)]
+let lis = document.querySelectorAll("li");
+undefined
+for(let i = 0; i < lis.length; i++) {
+    lis[i].style.color = "green";
+}
+"green"
+$("li").css("color", "blue")
+S.fn.init(3) [li, li, li#adorable, prevObject: S.fn.init(1)]
+$("a").css("font-size", "40px")
+S.fn.init [a, prevObject: S.fn.init(1)]
+$("li").css({
+    fontSize: "10px",
+    border: "3px dashed purple",
+    background: "rgba(89, 45, 20, 0.5)"
+});
+S.fn.init(3) [li, li, li#adorable, prevObject: S.fn.init(1)]
