@@ -52,7 +52,7 @@ function setupSquares() {
 			messageDisplay.textContent = "Try Again.";
 		};
 	});
-	}
+}
 }
 
 function reset() {
