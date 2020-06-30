@@ -1,0 +1,63 @@
+jQUERY EVENTS:
+Most common:
+- click() - add click listener to element(s)
+- keypress() - add keypress listener to element(s)
+- on() - similar to addEventListener (allows you to specify event)
+
+on() will add listeners for current and future elements. Others only add to current.
+
+
+
+click() Examlples:
+$("h1").click(function() {
+    alert("clicked");
+});
+
+$("button").click(function() {
+    alert("clicked");
+});
+
+$("button").click(function() {
+    $(this).css("background", "pink"); // uses jQuery this reference
+});
+
+$("button").click(function() {
+    let text = $(this).text();
+    console.log("You clicked " + text + ".");
+});
+
+
+
+keypress() Examples:
+$("input").keypress(function(){
+    console.log("You pressed a key!");
+});
+
+$("input").keypress(function(){		// shows full event
+    console.log(event);
+});
+
+$("input").keypress(function(){		// perform action when a particular key is pressed
+    if(event.which === 13){    
+    alert("You hit ENTER!");
+    }
+});
+
+
+
+on() Examples:
+$("h1").on("click", function(){
+    $(this).css("color", "purple");
+});
+
+$("input").on("keypress", function(){
+    console.log("KEYPRESSED!");
+});
+
+$("button").on("mouseenter", function(){
+    $(this).css("font-weight", "bold");
+});
+
+$("button").on("mouseleave", function(){
+    $(this).css("font-weight", "normal");
+});
