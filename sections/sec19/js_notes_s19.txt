@@ -61,3 +61,12 @@ $("button").on("mouseenter", function(){
 $("button").on("mouseleave", function(){
     $(this).css("font-weight", "normal");
 });
+
+
+
+jQUERY EFFECTS:
+Common:
+- Fade Effects: .fadeOut(), fadeIn(), fadeToggle()
+- Slide Effects: slideUp(), slideDown(), slideToggle()
+
+
