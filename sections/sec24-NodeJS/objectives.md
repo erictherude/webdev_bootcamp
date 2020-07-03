@@ -28,7 +28,7 @@
 * Create a new directory named *MyShop*
 * Add a file named *listProducts.js*
 * Install the *faker* packagecd Exercise
-* Read the Faker docs and figure out how it works
-* Use Faker to print out 10 random product names and prices
+* Read the faker docs and figure out how it works
+* Use faker to print out 10 random product names and prices
 * DON'T CHEAT!
 * Run the file with node to make sure it works
