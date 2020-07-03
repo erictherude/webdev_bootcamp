@@ -29,3 +29,11 @@
 * Add *start* to package.json (ex. *start: node app.js*)
 * On command line *nodemon*
 	
+# L271 - Route Params
+* Show the *\** route matcher
+	* matches anything
+* Write routes that contain route parameters
+	* route variables
+* Discuss route order
+	* order matters - routes are evaluated in the order listed
+	* request is handled according to first matching route encountered
