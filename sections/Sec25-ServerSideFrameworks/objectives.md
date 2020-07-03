@@ -37,3 +37,17 @@
 * Discuss route order
 	* order matters - routes are evaluated in the order listed
 	* request is handled according to first matching route encountered
+
+# L272 - Express Basics Assignment
+* Create a brand new express app.
+* Create a package.json using *npm init*
+* In your main *app.js* file, add 3 different routes:
+	* Visiing */* should print *Hi there, welcome to my assignment!*
+	* One route */speak* that takes an animal and prints animal and it's sound for at least five animals
+		* /speak/pig => *The pig says "Oink!"*
+		* /speak/cow => *The pig says "Moo!"*
+		* /speak/dog => *The pig says "Woof!"*
+	* One route */repeat* that takes a word and a number and prints the word number times
+		* /repeat/hi/3 => *hi hi hi*
+		* /repeat/yo/5 => *yo yo yo yo yo*
+	* All other routes should print *Sorry, page not found...What are you even doing?*
