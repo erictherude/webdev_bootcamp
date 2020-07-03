@@ -29,6 +29,6 @@
 * Add a file named *listProducts.js*
 * Install the *faker* packagecd Exercise
 * Read the faker docs and figure out how it works
-* Use faker to print out 10 random product names and prices
+* Use fakergit s to print out 10 random product names and prices
 * DON'T CHEAT!
 * Run the file with node to make sure it works
