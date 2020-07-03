@@ -15,3 +15,17 @@
 	* Server recieves and interprets request then formulates and sends response
 	* Browser recieves and displays response
 * Create our own simple Express app
+
+# L269 - NPM Init and Package.json
+* Use the *--save* flag to install packages
+	* automatically saves package to Package.json
+* Explain what the package.json file does
+	* contains metadata relevant to a project
+		* name, description, dependencies, etc.
+	* "recipe" for the project
+* Use *npm init* to create a new package.json
+
+# L270 - Automate Server Restart
+* Add *start* to package.json (ex. *start: node app.js*)
+* On command line *nodemon*
+	
