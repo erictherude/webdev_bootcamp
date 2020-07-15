@@ -1,71 +1,97 @@
 // ********************************
 // SETUP
-const express = require("express");
-const app = express();
-const bodyParser = require("body-parser");
+const express = require("express"),
+	  app = express(),
+	  bodyParser = require("body-parser"),
+	  mongoose = require('mongoose');
+
+// Connect to Mongoose
+mongoose.connect('mongodb://localhost:27017/yelp_camp', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('Connected to DB!'))
+.catch(error => console.log(error.message));
+
+// Mongoose Schema
+const campgroundSchema = new mongoose.Schema({
+	name: String,
+	image: String,
+	description: String
+});
+
+const Campground = mongoose.model("Campground", campgroundSchema);
+
+// Campground.create(
+// 	{
+// 			name: "Rob Hill Campground",
+// 			image: "https://www.parksconservancy.org/sites/default/files/styles/basic/public/programs/PRSF_130326_APAZ_179_2x1.JPG?itok=YguufFlB",
+// 			description: "A campground in The Presidio of San Francisco."
+// 	}, 
+// 	function(err, campground){
+// 		if(err){
+// 			console.log(err);
+// 		} else {
+// 			console.log(campground);
+// 		}
+// 	}
+// );
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
-let campgrounds = [
-		{
-			name: "Salmon Creek",
-			image: "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_333,q_75,w_500/https://assets.simpleviewinc.com/simpleview/image/upload/crm/lanecounty/salmon-creek-campground-by-colin-morton-2018-14--54a7f39c5056b3a_54a8010b-5056-b3a8-49a1afccddf9b8ab.jpg",
-		},
-		{
-			name: "Inn Town Campground",
-			image: "https://inntowncampground.com/wp-content/uploads/2014/03/A41A7122-e1464303231462-1030x727.jpg",
-		},
-		{
-			name: "Rob Hill Campground",
-			image: "https://www.parksconservancy.org/sites/default/files/styles/basic/public/programs/PRSF_130326_APAZ_179_2x1.JPG?itok=YguufFlB",
-		}, 
-		{
-			name: "Salmon Creek",
-			image: "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_333,q_75,w_500/https://assets.simpleviewinc.com/simpleview/image/upload/crm/lanecounty/salmon-creek-campground-by-colin-morton-2018-14--54a7f39c5056b3a_54a8010b-5056-b3a8-49a1afccddf9b8ab.jpg",
-		},
-		{
-			name: "Inn Town Campground",
-			image: "https://inntowncampground.com/wp-content/uploads/2014/03/A41A7122-e1464303231462-1030x727.jpg",
-		},
-		{
-			name: "Rob Hill Campground",
-			image: "https://www.parksconservancy.org/sites/default/files/styles/basic/public/programs/PRSF_130326_APAZ_179_2x1.JPG?itok=YguufFlB",
-		} // ,
-		// {
-		// 	name: "Kirby Cove Campground",
-		// 	image: "https://cdn.recreation.gov/public/images/66049.jpg"
-		// }
-	];
-
 // ********************************
 // ROUTE
 
-// Landing Page
+// Landing Page (GET)
 app.get("/", function (req, res) {
 	res.render("landing");
 });
 
-// Campgrounds Listing
+// Campgrounds Listing (GET)
 app.get("/campgrounds", function (req, res) {
-	res.render("campgrounds", {campgrounds: campgrounds});
+	Campground.find({}, function(err, allCampgrounds){
+		if(err){
+			console.log(err)
+		} else {
+			res.render("index", {campgrounds: allCampgrounds});
+		}
+	});
 });
 
-// Campgrounds POST
+// Create Campground (POST)
 app.post("/campgrounds", function(req,res){
 	// get data from form and add to campgrounds
 	let name = req.body.name;
 	let image = req.body.image;
-	let newCampground = {name: name, image: image};
-	campgrounds.push(newCampground);
+	let desc = req.body.description;
+	let newCampground = {name: name, image: image, description: desc};
 	
-	// redirect back to campgrounds page
-	res.redirect("/campgrounds");
+	Campground.create(newCampground, function(err, newlyCreated){
+		if(err){
+			console.log(err);
+		} else {
+		// redirect back to campgrounds page
+		res.redirect("/campgrounds");
+		}
+	});
 });
 
-// New Campgrounds Form
+// New Campgrounds Form (GET)
 app.get("/campgrounds/new", function(req,res){
 	res.render("new");
+});
+
+// Show campground detail (GET)
+app.get("/campgrounds/:id", function(req, res){
+	Campground.findById(req.params.id, function(err, foundCampground){
+		if(err){
+			console.log(err);
+		} else {
+			res.render("show", {campground: foundCampground});
+		}
+	});
+	
 });
 
 // ********************************
