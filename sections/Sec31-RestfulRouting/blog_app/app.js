@@ -16,7 +16,7 @@ app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 
 // Connect to Mongoose
-mongoose.connect('mongodb://localhost:27017/blog_app', {
+mongoose.connect('mongodb+srv://ekammerud:nbcWilOpYqNcxbhe@ekcluster.uqxns.mongodb.net/blog_app?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
