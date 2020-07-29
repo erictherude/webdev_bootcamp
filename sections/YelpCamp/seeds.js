@@ -1,6 +1,7 @@
 const mongoose 		= require("mongoose"),
 	  Campground 	= require("./models/campground"), 
 	  Comment 		= require("./models/comment"),
+	  User 			= require("./models/user")
 	  data = [
 			{
 				name: "Cloud's Rest", 
@@ -21,7 +22,13 @@ const mongoose 		= require("mongoose"),
  
 function seedDB(){
    //Remove all campgrounds
-   Campground.deleteMany({}, function(err){
+	User.deleteMany({}, function(err){
+		if(err){
+			console.log(err);
+		}
+		console.log("removed users");
+	});
+  	Campground.deleteMany({}, function(err){
         if(err){
             console.log(err);
         }
